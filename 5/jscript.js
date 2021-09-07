@@ -26,16 +26,3 @@ btn.onclick = function () {
     }
   }
 }
-
-
-// else {
-//   alert('error', response.status);
-// }
-
-    // function showImages(data){
-    //  data.forEach((item,index) => {
-    //   const foto = `<div class="foto" style=background-image:url(${data[index].download_url})></div>`;
-    //   const fotoBlock = +foto;
-    //   });
-    //   document.querySelector(".output").innerHTML = fotoBlock;
-    // }  
