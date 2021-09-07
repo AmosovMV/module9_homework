@@ -18,8 +18,8 @@ btn.onclick = function () {
           data.forEach((item, index) => {
             const foto = `<div class="foto" style=background-image:url(${data[index].download_url})></div>`;
             const fotoBlock = +foto;
+            document.querySelector(".output").innerHTML = fotoBlock;
           });
-          document.querySelector(".output").innerHTML = fotoBlock;
         }
       }
       getImages();
