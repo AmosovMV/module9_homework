@@ -15,11 +15,13 @@ btn.onclick = function () {
         if (response.ok) {
           let data = await response.json();
           console.log(data);
+          let fotoBlock = "";
           data.forEach((item, index) => {
-            const foto = `<div class="foto" style=background-image:url(${data[index].download_url})></div>`;
-            const fotoBlock += foto;
-            document.querySelector(".output").innerHTML = fotoBlock;
+            const foto = `<div style=background-image:url(${data[index].download_url})></div>`;
+            fotoBlock += foto;
+            return fotoBlock;
           });
+          document.querySelector(".output").innerHTML = fotoBlock;
         }
       }
       getImages();
