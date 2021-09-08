@@ -17,11 +17,10 @@ btn.onclick = function () {
           console.log(data);
           let fotoBlock = "";
           data.forEach((item, index) => {
-            const foto = `<div style=background-image:url(${data[index].download_url})></div>`;
+            const foto = `<div class="foto" style=background-image:url(${data[index].download_url})></div>`;
             fotoBlock += foto;
-            return fotoBlock
+            document.getElementById("result").innerHTML = fotoBlock;
           });
-          document.querySelector(".output").innerHTML = fotoBlock;
         }
       }
       getImages();
