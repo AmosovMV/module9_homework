@@ -19,7 +19,7 @@ btn.onclick = function () {
           data.forEach((item, index) => {
             const foto = `<div style=background-image:url(${data[index].download_url})></div>`;
             fotoBlock += foto;
-            return fotoBlock;
+            return fotoBlock
           });
           document.querySelector(".output").innerHTML = fotoBlock;
         }
