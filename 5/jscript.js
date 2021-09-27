@@ -4,7 +4,6 @@ const numLimit = document.getElementById("limit");
 let numPageValue = localStorage.getItem('numberPage', numPage.value);
 let numLimitValue = localStorage.getItem('numberLimit', numLimit.valuelet);
 let localData = localStorage.getItem('info');
-console.log(JSON.stringify(localData));
 
 btn.onclick = function () {
   document.querySelector(".output").innerHTML = '<div></div>'
